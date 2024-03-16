@@ -61,7 +61,7 @@ For this tutorial, we focus on the fundamentals of `Wallet`, and see how `Wallet
 In our case, we generate [`CKB default lock`](https://github.com/nervosnetwork/ckb-system-scripts/blob/master/c/secp256k1_blake160_sighash_all.c), also known as the `Secp256k1Blake160 Sign-all` lock, to secure the new spore. You need to fill the `lock.args` with a blake160 hash generated from your private key to generate this lock script:
 
 ```tsx
-import { getSporeConfig } from '@sproe-sdk/core';
+import { getSporeConfig } from '@spore-sdk/core';
 
 const config = getSporeConfig();
 const Secp256k1Blake160 = config.lumos.SCRIPTS['SECP256K1_BLAKE160']!;
